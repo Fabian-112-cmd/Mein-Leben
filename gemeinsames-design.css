@@ -1,0 +1,11 @@
+
+/* Privat-Apps – gemeinsamer Gestaltungsstandard v1, nur visuelle Anpassungen */
+:root{--privat-forest:#063d2b;--privat-forest-deep:#032b20;--privat-cream:#f8f6ee;--privat-border:#dbe6dc;--privat-accent:#8ba748;--privat-shadow:0 6px 22px rgba(8,46,28,.10)}
+button,a,input,select,textarea{-webkit-tap-highlight-color:transparent}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #90bd70;outline-offset:2px}
+.card,.panel,.linkcard{border-radius:16px;box-shadow:var(--privat-shadow)}
+.btn,.quick-actions button{border-radius:12px}
+@media(min-width:851px){.side{background:linear-gradient(170deg,var(--privat-forest),var(--privat-forest-deep));border-right:1px solid #ffffff25}.side .nav{border-radius:12px}.side .nav.active{background:#527a3d}.main{width:100%}}
+@media(max-width:850px){.bottom{background:var(--privat-forest-deep);border-radius:17px 17px 0 0;padding-bottom:calc(8px + env(safe-area-inset-bottom));box-shadow:0 -5px 20px #082d1b2b}.bottom button{min-height:52px;border-radius:12px}.bottom button.active{background:var(--privat-accent);color:#fff}.main{padding-bottom:calc(115px + env(safe-area-inset-bottom))}.fab{bottom:calc(87px + env(safe-area-inset-bottom))}}
+@media(min-width:851px) and (max-width:1200px){.main{padding-left:20px;padding-right:20px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:0.01ms!important;animation-duration:0.01ms!important}}
