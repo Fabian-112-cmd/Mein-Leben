@@ -394,7 +394,9 @@ async function remove(id){if(!confirm('Eintrag wirklich löschen?'))return;const
 async function done(id){const r=records.find(x=>x.id===id);if(!r)return;let details={...r.details},due_date=r.due_date;if(details.status==='Erledigt'){details.status='Offen'}else if(details.recurrence&&details.recurrence!=='Nie'&&r.due_date){details.status='Offen';const base=occurrence(r.due_date,details.recurrence);due_date=addPeriod(base,details.recurrence);details.last_completed=today()}else{details.status='Erledigt'}const {error}=await client.from('mein_leben_entries').update({details,due_date}).eq('id',id);if(error)toast(error.message);else{toast(due_date!==r.due_date?'Erledigt · nächster Termin: '+date(due_date):'Status aktualisiert');await load()}}
 init();})();
 </script>
-  <script src="mein-alltag-formulare-v7.js?v=7"></script>
-  <script src="mein-alltag-formulare-v8.js?v=8"></script>
-  <script src="mein-alltag-ansicht-v9.js?v=9"></script>
-</body></html>
+<script src="mein-alltag-formulare-v7.js?v=7"></script>
+<script src="mein-alltag-formulare-v8.js?v=8"></script>
+<script src="mein-alltag-ansicht-v9.js?v=9"></script>
+<script src="mein-alltag-loeschen-v10.js?v=10"></script>
+</body>
+</html>
