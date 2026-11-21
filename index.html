@@ -393,8 +393,10 @@ $('entryForm').onsubmit=async e=>{e.preventDefault();if(!session)return;const bu
 async function remove(id){if(!confirm('Eintrag wirklich löschen?'))return;const r=records.find(x=>x.id===id);const paths=(r?.details?.attachments||[]).map(x=>x.path).filter(Boolean);if(paths.length){const {error:storageError}=await client.storage.from('mein-alltag-dateien').remove(paths);if(storageError){toast('Dateien konnten nicht gelöscht werden: '+storageError.message);return}}const {error}=await client.from('mein_leben_entries').delete().eq('id',id);if(error){toast('Eintrag konnte nicht gelöscht werden: '+error.message);return}toast('Gelöscht');await load()}
 async function done(id){const r=records.find(x=>x.id===id);if(!r)return;let details={...r.details},due_date=r.due_date;if(details.status==='Erledigt'){details.status='Offen'}else if(details.recurrence&&details.recurrence!=='Nie'&&r.due_date){details.status='Offen';const base=occurrence(r.due_date,details.recurrence);due_date=addPeriod(base,details.recurrence);details.last_completed=today()}else{details.status='Erledigt'}const {error}=await client.from('mein_leben_entries').update({details,due_date}).eq('id',id);if(error)toast(error.message);else{toast(due_date!==r.due_date?'Erledigt · nächster Termin: '+date(due_date):'Status aktualisiert');await load()}}
 window.meinAlltagRemove=remove;
+window.meinAlltagV13Records=()=>records;
 init();})();
 </script>
 <script src="mein-alltag-kompakt-v12.js?v=12"></script>
+<script src="mein-alltag-tagesuebersicht-v13.js?v=13"></script>
 </body>
 </html>
