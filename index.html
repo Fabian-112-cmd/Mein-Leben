@@ -427,5 +427,32 @@ html body #app{background:var(--privat-midnight)!important;min-height:100dvh}htm
 </style>
 <style>
 /* Unified Midnight layout */
-html{min-height:100%;background:#101b30!important}body{min-height:100vh;background:radial-gradient(ellipse at 90% 10%,#8c72c266,transparent 48%),repeating-linear-gradient(155deg,transparent 0 76px,#a9b8e70b 77px 78px,transparent 79px 92px),linear-gradient(35deg,#101b30,#283451 58%,#66558b)!important;background-attachment:fixed!important;background-repeat:no-repeat!important;background-size:100% 100%!important}html,body,button,input,select,textarea{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important}button,input,select,textarea{letter-spacing:normal}html body #app{background:transparent!important}html body #app .side .brand{font-size:21px!important;font-weight:750!important;letter-spacing:normal!important}html body #app .side .nav{font-size:14px!important;min-height:44px!important;font-weight:650!important}html body #app .side .brand small{font-size:12px!important;font-weight:400!important}html body #app .hero h1{font-size:32px!important;font-weight:750!important}@media(min-width:851px){html body #app .main{flex:1!important;width:calc(100% - 240px)!important;max-width:1440px!important;margin:0 auto!important;padding:24px 32px 50px!important}html body #app .side{width:240px!important;flex:0 0 240px!important}}@media(max-width:850px){html body #app .main{width:100%!important;margin:0!important}}</style></body>
+html{min-height:100%;background:#101b30!important}body{min-height:100vh;background:radial-gradient(ellipse at 90% 10%,#8c72c266,transparent 48%),repeating-linear-gradient(155deg,transparent 0 76px,#a9b8e70b 77px 78px,transparent 79px 92px),linear-gradient(35deg,#101b30,#283451 58%,#66558b)!important;background-attachment:fixed!important;background-repeat:no-repeat!important;background-size:100% 100%!important}html,body,button,input,select,textarea{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important}button,input,select,textarea{letter-spacing:normal}html body #app{background:transparent!important}html body #app .side .brand{font-size:21px!important;font-weight:750!important;letter-spacing:normal!important}html body #app .side .nav{font-size:14px!important;min-height:44px!important;font-weight:650!important}html body #app .side .brand small{font-size:12px!important;font-weight:400!important}html body #app .hero h1{font-size:32px!important;font-weight:750!important}@media(min-width:851px){html body #app .main{flex:1!important;width:calc(100% - 240px)!important;max-width:1440px!important;margin:0 auto!important;padding:24px 32px 50px!important}html body #app .side{width:240px!important;flex:0 0 240px!important}}@media(max-width:850px){html body #app .main{width:100%!important;margin:0!important}}</style><style>
+html body #app .today-section {
+    padding: 18px !important;
+    box-sizing: border-box !important;
+}
+html body #app .today-section h2 {
+    margin: 0 0 12px !important;
+    padding: 0 !important;
+    font-size: 16px !important;
+    text-shadow: none !important;
+}
+html body #app .today-section .due-summary {
+    margin: 0 0 12px !important;
+}
+html body #app .today-section .panel {
+    margin: 0 !important;
+    box-shadow: none !important;
+}
+html body #app .today-section .due-date:not(.late),
+html body #app .today-section .due-line button {
+    background: #eee8fc !important;
+    color: #6545b2 !important;
+}
+html body #app .today-section > p.muted {
+    margin: 12px 0 0 !important;
+}
+</style>
+</body>
 </html>
