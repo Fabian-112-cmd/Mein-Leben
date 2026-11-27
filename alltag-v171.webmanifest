@@ -1,0 +1,1 @@
+{"name": "Mein Alltag", "short_name": "Mein Alltag", "start_url": "./", "scope": "./", "display": "standalone", "background_color": "#f4f2ff", "theme_color": "#182c50", "icons": [{"src": "alltag-icon-192.png", "sizes": "192x192", "type": "image/png"}, {"src": "alltag-icon-512.png", "sizes": "512x512", "type": "image/png"}]}
