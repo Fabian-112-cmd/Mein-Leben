@@ -420,5 +420,10 @@ html body #app .side .brand{padding:0 8px 24px!important;margin:0!important;flex
 html body #app .side .brand .alltag-home-icon{margin:0 auto 10px!important;}
 }
 </style><script>document.querySelector('.side .brand').addEventListener('click',()=>{document.querySelector('.side [data-view="home"]').click();window.scrollTo(0,0)});</script>
+<style>
+/* Midnight Premium */
+:root{--privat-midnight:radial-gradient(ellipse at 90% 10%,#8c72c266,transparent 48%),repeating-linear-gradient(155deg,transparent 0 76px,#a9b8e70b 77px 78px,transparent 79px 92px),linear-gradient(35deg,#101b30,#283451 58%,#66558b) fixed;--privat-banner:linear-gradient(115deg,#354565,#75629e);--privat-sidebar:#111c30;--privat-highlight:#8272c5;}
+html body #app{background:var(--privat-midnight)!important;min-height:100dvh}html body #app .main{background:transparent!important}html body #app .side{background:var(--privat-sidebar)!important}html body #app .side .nav.active,html body #app .side .nav:hover{background:var(--privat-highlight)!important}html body #app .hero{background:var(--privat-banner)!important;min-height:148px!important;border-radius:16px!important;padding:24px!important;margin:0 0 16px!important;color:white!important}html body #app .dashboard-grid .card,html body #app .panel,html body #app .linkcard,html body #app .dashboard-link{background:#f7f7fc!important;border-color:#e2dfed!important;color:#172644!important;border-radius:16px!important}html body #app .dashboard-grid .card strong,html body #app .dashboard-link b{color:#172644!important}html body #app .dashboard-grid .card .ico{color:#7652ce!important}html body #app .main>h1,html body #app .main>h2{color:#f1eefb!important}@media(max-width:850px){html body #app .bottom{background:#f7f7fc!important}html body #app .bottom button{color:#172644!important}html body #app .bottom button.active{background:#e8e1f7!important;color:#654da5!important}html body #app .hero{padding:16px!important}}
+</style>
 </body>
 </html>
