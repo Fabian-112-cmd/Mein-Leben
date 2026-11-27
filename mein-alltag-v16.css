@@ -4,3 +4,31 @@ body,.app{background:#eef0fa!important;color:#18233e!important}.app{background-i
 @media(max-width:1100px){.home-columns{grid-template-columns:1fr!important}}@media(max-width:980px){.main{padding-bottom:100px!important}.hero{min-height:120px!important}.modal .dialog{max-height:calc(100dvh - 32px - env(safe-area-inset-top) - env(safe-area-inset-bottom))!important}.dialogfoot{padding-bottom:calc(12px + env(safe-area-inset-bottom))!important}}
 
 .dashboard-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}.dashboard-grid .card .tile-text{min-width:0!important;overflow-wrap:normal!important;word-break:normal!important}.dashboard-grid .card strong{word-break:normal!important;overflow-wrap:normal!important;color:#18233e!important}.dashboard-grid .ico{flex-shrink:0!important}.v161-doc{cursor:pointer;font:inherit;text-align:left}.home-columns section[data-compact161] .item{padding:0!important;min-height:0!important}.v161-task{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;padding:13px 15px;border:0;background:transparent;color:#18233e;font:inherit;font-weight:650;text-align:left;cursor:pointer}.v161-task:hover,.v161-task:focus-visible{background:#eee8ff}.v161-task span{color:#7954ce;font-size:20px}.home-columns section[data-compact161] .panel{min-height:0!important}.dashboard-grid .card{min-width:0!important}@media(max-width:980px){.dashboard-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+/* Midnight – Heute & demnächst */
+body .app .main section.today-section {
+    padding: 16px !important;
+    box-sizing: border-box !important;
+    border-radius: 16px !important;
+}
+
+body .app .main .today-section h2 {
+    margin: 0 0 12px !important;
+    padding: 0 !important;
+    font-size: 16px !important;
+    color: #172644 !important;
+    text-shadow: none !important;
+}
+
+body .app .main .today-section .due-summary {
+    margin: 0 0 12px !important;
+}
+
+body .app .main .today-section .panel {
+    margin: 0 !important;
+    box-shadow: none !important;
+}
+
+body .app .main .today-section > p.muted {
+    margin: 12px 0 0 !important;
+    font-size: 12px !important;
+}
