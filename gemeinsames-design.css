@@ -81,3 +81,33 @@
   .side .sidefoot{margin-top:auto!important;padding:12px 6px!important;font-size:11px!important}
   .app .main{flex:1 1 0!important;min-width:0!important}
 }
+/* Heute & demnächst – Designkorrektur */
+.today-section {
+    padding: 16px !important;
+    border-radius: 16px !important;
+}
+
+.today-section h2 {
+    margin: 0 0 12px !important;
+    font-size: 16px !important;
+    color: #172644 !important;
+}
+
+.today-section .due-summary {
+    margin: 0 0 12px !important;
+}
+
+.today-section .panel {
+    margin: 0 !important;
+    box-shadow: none !important;
+}
+
+.today-section > p.muted {
+    margin: 12px 0 0 !important;
+    font-size: 12px !important;
+}
+
+.today-section .due-date:not(.late) {
+    background: #eee8fc !important;
+    color: #6545b2 !important;
+}
